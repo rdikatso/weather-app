@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Weather App</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="nav">
+            <h1 class="heading">Weatherly</h1>
+        </div>
+        <div class="search-container">
+            <form>
+                <input class="search" type="text" placeholder = "Enter a city">
+                <button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+     
+        <div class="wrapper">
+            <div class="weather-icon">
+
+                <div class="image-container">
+                    <img id="icon" src="" alt="Weather icon">
+                </div>
+                
+                <div class="weather-info">
+                    <div id="temp"></div>
+                    <div class="temp-units">
+                        <span class="celcius active">℃</span>
+                        <span class="separator"></span>
+                        <span class="fahrenheit">℉</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feel"></div>
+    
+            <div class="location-info">
+                <p id="city" class ="location"></p>
+                <p class="day-time"></p>
+                <p class ="description"></p>
+            </div>
+
+        </div>
+        <div class=extended-info>
+            <h3 class="hourly-title">Hourly Forecast</h3>
+            <div class="hourly-info"></div>
+            <h3 class="daily-title">Daily Forecast</h3>
+            <div class="daily-info"></div>
+        </div>
+        
+        
+        
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
